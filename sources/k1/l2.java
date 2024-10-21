@@ -1,0 +1,244 @@
+package k1;
+
+/* loaded from: classes.dex */
+public enum l2 {
+    ENUM,
+    SINT8,
+    UINT8,
+    SINT16,
+    UINT16,
+    SINT32,
+    UINT32,
+    STRING,
+    FLOAT32,
+    FLOAT64,
+    UINT8Z,
+    UINT16Z,
+    UINT32Z,
+    BYTE,
+    SINT64,
+    UINT64,
+    UINT64Z,
+    BOOL,
+    FILE,
+    MESG_NUM,
+    CHECKSUM,
+    FILE_FLAGS,
+    MESG_COUNT,
+    DATE_TIME,
+    LOCAL_DATE_TIME,
+    MESSAGE_INDEX,
+    DEVICE_INDEX,
+    GENDER,
+    LANGUAGE,
+    LANGUAGE_BITS_0,
+    LANGUAGE_BITS_1,
+    LANGUAGE_BITS_2,
+    LANGUAGE_BITS_3,
+    LANGUAGE_BITS_4,
+    TIME_ZONE,
+    DISPLAY_MEASURE,
+    DISPLAY_HEART,
+    DISPLAY_POWER,
+    DISPLAY_POSITION,
+    SWITCH,
+    SPORT,
+    SPORT_BITS_0,
+    SPORT_BITS_1,
+    SPORT_BITS_2,
+    SPORT_BITS_3,
+    SPORT_BITS_4,
+    SPORT_BITS_5,
+    SPORT_BITS_6,
+    SUB_SPORT,
+    SPORT_EVENT,
+    ACTIVITY,
+    INTENSITY,
+    SESSION_TRIGGER,
+    AUTOLAP_TRIGGER,
+    LAP_TRIGGER,
+    TIME_MODE,
+    BACKLIGHT_MODE,
+    DATE_MODE,
+    BACKLIGHT_TIMEOUT,
+    EVENT,
+    EVENT_TYPE,
+    TIMER_TRIGGER,
+    FITNESS_EQUIPMENT_STATE,
+    TONE,
+    AUTOSCROLL,
+    ACTIVITY_CLASS,
+    HR_ZONE_CALC,
+    PWR_ZONE_CALC,
+    WKT_STEP_DURATION,
+    WKT_STEP_TARGET,
+    GOAL,
+    GOAL_RECURRENCE,
+    GOAL_SOURCE,
+    SCHEDULE,
+    COURSE_POINT,
+    MANUFACTURER,
+    GARMIN_PRODUCT,
+    ANTPLUS_DEVICE_TYPE,
+    ANT_NETWORK,
+    WORKOUT_CAPABILITIES,
+    BATTERY_STATUS,
+    HR_TYPE,
+    COURSE_CAPABILITIES,
+    WEIGHT,
+    WORKOUT_HR,
+    WORKOUT_POWER,
+    BP_STATUS,
+    USER_LOCAL_ID,
+    SWIM_STROKE,
+    ACTIVITY_TYPE,
+    ACTIVITY_SUBTYPE,
+    ACTIVITY_LEVEL,
+    SIDE,
+    LEFT_RIGHT_BALANCE,
+    LEFT_RIGHT_BALANCE_100,
+    LENGTH_TYPE,
+    DAY_OF_WEEK,
+    CONNECTIVITY_CAPABILITIES,
+    WEATHER_REPORT,
+    WEATHER_STATUS,
+    WEATHER_SEVERITY,
+    WEATHER_SEVERE_TYPE,
+    TIME_INTO_DAY,
+    LOCALTIME_INTO_DAY,
+    STROKE_TYPE,
+    BODY_LOCATION,
+    SEGMENT_LAP_STATUS,
+    SEGMENT_LEADERBOARD_TYPE,
+    SEGMENT_DELETE_STATUS,
+    SEGMENT_SELECTION_TYPE,
+    SOURCE_TYPE,
+    LOCAL_DEVICE_TYPE,
+    BLE_DEVICE_TYPE,
+    ANT_CHANNEL_ID,
+    DISPLAY_ORIENTATION,
+    WORKOUT_EQUIPMENT,
+    WATCHFACE_MODE,
+    DIGITAL_WATCHFACE_LAYOUT,
+    ANALOG_WATCHFACE_LAYOUT,
+    RIDER_POSITION_TYPE,
+    POWER_PHASE_TYPE,
+    CAMERA_EVENT_TYPE,
+    SENSOR_TYPE,
+    BIKE_LIGHT_NETWORK_CONFIG_TYPE,
+    COMM_TIMEOUT_TYPE,
+    CAMERA_ORIENTATION_TYPE,
+    ATTITUDE_STAGE,
+    ATTITUDE_VALIDITY,
+    AUTO_SYNC_FREQUENCY,
+    EXD_LAYOUT,
+    EXD_DISPLAY_TYPE,
+    EXD_DATA_UNITS,
+    EXD_QUALIFIERS,
+    EXD_DESCRIPTORS,
+    AUTO_ACTIVITY_DETECT,
+    SUPPORTED_EXD_SCREEN_LAYOUTS,
+    FIT_BASE_TYPE,
+    TURN_TYPE,
+    BIKE_LIGHT_BEAM_ANGLE_MODE,
+    FIT_BASE_UNIT,
+    SET_TYPE,
+    EXERCISE_CATEGORY,
+    BENCH_PRESS_EXERCISE_NAME,
+    CALF_RAISE_EXERCISE_NAME,
+    CARDIO_EXERCISE_NAME,
+    CARRY_EXERCISE_NAME,
+    CHOP_EXERCISE_NAME,
+    CORE_EXERCISE_NAME,
+    CRUNCH_EXERCISE_NAME,
+    CURL_EXERCISE_NAME,
+    DEADLIFT_EXERCISE_NAME,
+    FLYE_EXERCISE_NAME,
+    HIP_RAISE_EXERCISE_NAME,
+    HIP_STABILITY_EXERCISE_NAME,
+    HIP_SWING_EXERCISE_NAME,
+    HYPEREXTENSION_EXERCISE_NAME,
+    LATERAL_RAISE_EXERCISE_NAME,
+    LEG_CURL_EXERCISE_NAME,
+    LEG_RAISE_EXERCISE_NAME,
+    LUNGE_EXERCISE_NAME,
+    OLYMPIC_LIFT_EXERCISE_NAME,
+    PLANK_EXERCISE_NAME,
+    PLYO_EXERCISE_NAME,
+    PULL_UP_EXERCISE_NAME,
+    PUSH_UP_EXERCISE_NAME,
+    ROW_EXERCISE_NAME,
+    SHOULDER_PRESS_EXERCISE_NAME,
+    SHOULDER_STABILITY_EXERCISE_NAME,
+    SHRUG_EXERCISE_NAME,
+    SIT_UP_EXERCISE_NAME,
+    SQUAT_EXERCISE_NAME,
+    TOTAL_BODY_EXERCISE_NAME,
+    TRICEPS_EXTENSION_EXERCISE_NAME,
+    WARM_UP_EXERCISE_NAME,
+    RUN_EXERCISE_NAME,
+    WATER_TYPE,
+    TISSUE_MODEL_TYPE,
+    DIVE_GAS_STATUS,
+    DIVE_ALERT,
+    DIVE_ALARM_TYPE,
+    DIVE_BACKLIGHT_MODE,
+    CCR_SETPOINT_SWITCH_MODE,
+    DIVE_GAS_MODE,
+    FAVERO_PRODUCT,
+    SPLIT_TYPE,
+    CLIMB_PRO_EVENT,
+    GAS_CONSUMPTION_RATE_TYPE,
+    TAP_SENSITIVITY,
+    RADAR_THREAT_LEVEL_TYPE,
+    NO_FLY_TIME_MODE,
+    NUM_TYPES;
+
+    public static l2 a(int i2) {
+        if (i2 == 1) {
+            return SINT8;
+        }
+        if (i2 == 2) {
+            return UINT8;
+        }
+        if (i2 == 7) {
+            return STRING;
+        }
+        if (i2 == 10) {
+            return UINT8Z;
+        }
+        if (i2 == 136) {
+            return FLOAT32;
+        }
+        if (i2 == 137) {
+            return FLOAT64;
+        }
+        if (i2 == 139) {
+            return UINT16Z;
+        }
+        if (i2 == 140) {
+            return UINT32Z;
+        }
+        switch (i2) {
+            case 131:
+                return SINT16;
+            case 132:
+                return UINT16;
+            case 133:
+                return SINT32;
+            case 134:
+                return UINT32;
+            default:
+                switch (i2) {
+                    case 142:
+                        return SINT64;
+                    case 143:
+                        return UINT64;
+                    case 144:
+                        return UINT64Z;
+                    default:
+                        return ENUM;
+                }
+        }
+    }
+}

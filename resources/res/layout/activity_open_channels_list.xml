@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView_Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status Display Text"
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:layout_gravity="bottom|left"
+        android:id="@+id/textView_Todo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="In the future this page will show more details about channels like the applications/plugins using them and allow users to manually force close channels"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:textSize="250dp"
+        android:gravity="center"
+        android:id="@+id/textView_FreeChannels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_above="@+id/textView_Todo"
+        android:layout_below="@+id/textView_Status"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

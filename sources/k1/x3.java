@@ -1,0 +1,130 @@
+package k1;
+
+/* loaded from: classes.dex */
+public class x3 extends s1 {
+
+    /* renamed from: g */
+    protected static final s1 f2531g;
+
+    static {
+        s1 s1Var = new s1("workout_step", 27);
+        f2531g = s1Var;
+        s1Var.h(new s0("message_index", 254, 132, 1.0d, 0.0d, "", false, l2.MESSAGE_INDEX));
+        l2 l2Var = l2.STRING;
+        s1Var.h(new s0("wkt_step_name", 0, 7, 1.0d, 0.0d, "", false, l2Var));
+        s1Var.h(new s0("duration_type", 1, 0, 1.0d, 0.0d, "", false, l2.WKT_STEP_DURATION));
+        l2 l2Var2 = l2.UINT32;
+        s1Var.h(new s0("duration_value", 2, 134, 1.0d, 0.0d, "", false, l2Var2));
+        ((s0) s1Var.f2382d.get(3)).f2376k.add(new d3("duration_time", 134, 1000.0d, 0.0d, "s"));
+        ((d3) ((s0) s1Var.f2382d.get(3)).f2376k.get(0)).b(1, 0L);
+        ((d3) ((s0) s1Var.f2382d.get(3)).f2376k.get(0)).b(1, 28L);
+        ((s0) s1Var.f2382d.get(3)).f2376k.add(new d3("duration_distance", 134, 100.0d, 0.0d, "m"));
+        ((d3) ((s0) s1Var.f2382d.get(3)).f2376k.get(1)).b(1, 1L);
+        ((s0) s1Var.f2382d.get(3)).f2376k.add(new d3("duration_hr", 134, 1.0d, 0.0d, "% or bpm"));
+        ((d3) ((s0) s1Var.f2382d.get(3)).f2376k.get(2)).b(1, 2L);
+        ((d3) ((s0) s1Var.f2382d.get(3)).f2376k.get(2)).b(1, 3L);
+        ((s0) s1Var.f2382d.get(3)).f2376k.add(new d3("duration_calories", 134, 1.0d, 0.0d, "calories"));
+        ((d3) ((s0) s1Var.f2382d.get(3)).f2376k.get(3)).b(1, 4L);
+        ((s0) s1Var.f2382d.get(3)).f2376k.add(new d3("duration_step", 134, 1.0d, 0.0d, ""));
+        ((d3) ((s0) s1Var.f2382d.get(3)).f2376k.get(4)).b(1, 6L);
+        ((d3) ((s0) s1Var.f2382d.get(3)).f2376k.get(4)).b(1, 7L);
+        ((d3) ((s0) s1Var.f2382d.get(3)).f2376k.get(4)).b(1, 8L);
+        ((d3) ((s0) s1Var.f2382d.get(3)).f2376k.get(4)).b(1, 9L);
+        ((d3) ((s0) s1Var.f2382d.get(3)).f2376k.get(4)).b(1, 10L);
+        ((d3) ((s0) s1Var.f2382d.get(3)).f2376k.get(4)).b(1, 11L);
+        ((d3) ((s0) s1Var.f2382d.get(3)).f2376k.get(4)).b(1, 12L);
+        ((d3) ((s0) s1Var.f2382d.get(3)).f2376k.get(4)).b(1, 13L);
+        ((s0) s1Var.f2382d.get(3)).f2376k.add(new d3("duration_power", 134, 1.0d, 0.0d, "% or watts"));
+        ((d3) ((s0) s1Var.f2382d.get(3)).f2376k.get(5)).b(1, 14L);
+        ((d3) ((s0) s1Var.f2382d.get(3)).f2376k.get(5)).b(1, 15L);
+        ((s0) s1Var.f2382d.get(3)).f2376k.add(new d3("duration_reps", 134, 1.0d, 0.0d, ""));
+        ((d3) ((s0) s1Var.f2382d.get(3)).f2376k.get(6)).b(1, 29L);
+        l2 l2Var3 = l2.WKT_STEP_TARGET;
+        s1Var.h(new s0("target_type", 3, 0, 1.0d, 0.0d, "", false, l2Var3));
+        s1Var.h(new s0("target_value", 4, 134, 1.0d, 0.0d, "", false, l2Var2));
+        ((s0) s1Var.f2382d.get(5)).f2376k.add(new d3("target_speed_zone", 134, 1.0d, 0.0d, ""));
+        ((d3) ((s0) s1Var.f2382d.get(5)).f2376k.get(0)).b(3, 0L);
+        ((s0) s1Var.f2382d.get(5)).f2376k.add(new d3("target_hr_zone", 134, 1.0d, 0.0d, ""));
+        ((d3) ((s0) s1Var.f2382d.get(5)).f2376k.get(1)).b(3, 1L);
+        ((s0) s1Var.f2382d.get(5)).f2376k.add(new d3("target_cadence_zone", 134, 1.0d, 0.0d, ""));
+        ((d3) ((s0) s1Var.f2382d.get(5)).f2376k.get(2)).b(3, 3L);
+        ((s0) s1Var.f2382d.get(5)).f2376k.add(new d3("target_power_zone", 134, 1.0d, 0.0d, ""));
+        ((d3) ((s0) s1Var.f2382d.get(5)).f2376k.get(3)).b(3, 4L);
+        ((s0) s1Var.f2382d.get(5)).f2376k.add(new d3("repeat_steps", 134, 1.0d, 0.0d, ""));
+        ((d3) ((s0) s1Var.f2382d.get(5)).f2376k.get(4)).b(1, 6L);
+        ((s0) s1Var.f2382d.get(5)).f2376k.add(new d3("repeat_time", 134, 1000.0d, 0.0d, "s"));
+        ((d3) ((s0) s1Var.f2382d.get(5)).f2376k.get(5)).b(1, 7L);
+        ((s0) s1Var.f2382d.get(5)).f2376k.add(new d3("repeat_distance", 134, 100.0d, 0.0d, "m"));
+        ((d3) ((s0) s1Var.f2382d.get(5)).f2376k.get(6)).b(1, 8L);
+        ((s0) s1Var.f2382d.get(5)).f2376k.add(new d3("repeat_calories", 134, 1.0d, 0.0d, "calories"));
+        ((d3) ((s0) s1Var.f2382d.get(5)).f2376k.get(7)).b(1, 9L);
+        ((s0) s1Var.f2382d.get(5)).f2376k.add(new d3("repeat_hr", 134, 1.0d, 0.0d, "% or bpm"));
+        ((d3) ((s0) s1Var.f2382d.get(5)).f2376k.get(8)).b(1, 10L);
+        ((d3) ((s0) s1Var.f2382d.get(5)).f2376k.get(8)).b(1, 11L);
+        ((s0) s1Var.f2382d.get(5)).f2376k.add(new d3("repeat_power", 134, 1.0d, 0.0d, "% or watts"));
+        ((d3) ((s0) s1Var.f2382d.get(5)).f2376k.get(9)).b(1, 12L);
+        ((d3) ((s0) s1Var.f2382d.get(5)).f2376k.get(9)).b(1, 13L);
+        ((s0) s1Var.f2382d.get(5)).f2376k.add(new d3("target_stroke_type", 0, 1.0d, 0.0d, ""));
+        ((d3) ((s0) s1Var.f2382d.get(5)).f2376k.get(10)).b(3, 11L);
+        s1Var.h(new s0("custom_target_value_low", 5, 134, 1.0d, 0.0d, "", false, l2Var2));
+        ((s0) s1Var.f2382d.get(6)).f2376k.add(new d3("custom_target_speed_low", 134, 1000.0d, 0.0d, "m/s"));
+        ((d3) ((s0) s1Var.f2382d.get(6)).f2376k.get(0)).b(3, 0L);
+        ((s0) s1Var.f2382d.get(6)).f2376k.add(new d3("custom_target_heart_rate_low", 134, 1.0d, 0.0d, "% or bpm"));
+        ((d3) ((s0) s1Var.f2382d.get(6)).f2376k.get(1)).b(3, 1L);
+        ((s0) s1Var.f2382d.get(6)).f2376k.add(new d3("custom_target_cadence_low", 134, 1.0d, 0.0d, "rpm"));
+        ((d3) ((s0) s1Var.f2382d.get(6)).f2376k.get(2)).b(3, 3L);
+        ((s0) s1Var.f2382d.get(6)).f2376k.add(new d3("custom_target_power_low", 134, 1.0d, 0.0d, "% or watts"));
+        ((d3) ((s0) s1Var.f2382d.get(6)).f2376k.get(3)).b(3, 4L);
+        s1Var.h(new s0("custom_target_value_high", 6, 134, 1.0d, 0.0d, "", false, l2Var2));
+        ((s0) s1Var.f2382d.get(7)).f2376k.add(new d3("custom_target_speed_high", 134, 1000.0d, 0.0d, "m/s"));
+        ((d3) ((s0) s1Var.f2382d.get(7)).f2376k.get(0)).b(3, 0L);
+        ((s0) s1Var.f2382d.get(7)).f2376k.add(new d3("custom_target_heart_rate_high", 134, 1.0d, 0.0d, "% or bpm"));
+        ((d3) ((s0) s1Var.f2382d.get(7)).f2376k.get(1)).b(3, 1L);
+        ((s0) s1Var.f2382d.get(7)).f2376k.add(new d3("custom_target_cadence_high", 134, 1.0d, 0.0d, "rpm"));
+        ((d3) ((s0) s1Var.f2382d.get(7)).f2376k.get(2)).b(3, 3L);
+        ((s0) s1Var.f2382d.get(7)).f2376k.add(new d3("custom_target_power_high", 134, 1.0d, 0.0d, "% or watts"));
+        ((d3) ((s0) s1Var.f2382d.get(7)).f2376k.get(3)).b(3, 4L);
+        s1Var.h(new s0("intensity", 7, 0, 1.0d, 0.0d, "", false, l2.INTENSITY));
+        s1Var.h(new s0("notes", 8, 7, 1.0d, 0.0d, "", false, l2Var));
+        s1Var.h(new s0("equipment", 9, 0, 1.0d, 0.0d, "", false, l2.WORKOUT_EQUIPMENT));
+        s1Var.h(new s0("exercise_category", 10, 132, 1.0d, 0.0d, "", false, l2.EXERCISE_CATEGORY));
+        l2 l2Var4 = l2.UINT16;
+        s1Var.h(new s0("exercise_name", 11, 132, 1.0d, 0.0d, "", false, l2Var4));
+        s1Var.h(new s0("exercise_weight", 12, 132, 100.0d, 0.0d, "kg", false, l2Var4));
+        s1Var.h(new s0("weight_display_unit", 13, 132, 1.0d, 0.0d, "", false, l2.FIT_BASE_UNIT));
+        s1Var.h(new s0("secondary_target_type", 19, 0, 1.0d, 0.0d, "", false, l2Var3));
+        s1Var.h(new s0("secondary_target_value", 20, 134, 1.0d, 0.0d, "", false, l2Var2));
+        ((s0) s1Var.f2382d.get(16)).f2376k.add(new d3("secondary_target_speed_zone", 134, 1.0d, 0.0d, ""));
+        ((d3) ((s0) s1Var.f2382d.get(16)).f2376k.get(0)).b(19, 0L);
+        ((s0) s1Var.f2382d.get(16)).f2376k.add(new d3("secondary_target_hr_zone", 134, 1.0d, 0.0d, ""));
+        ((d3) ((s0) s1Var.f2382d.get(16)).f2376k.get(1)).b(19, 1L);
+        ((s0) s1Var.f2382d.get(16)).f2376k.add(new d3("secondary_target_cadence_zone", 134, 1.0d, 0.0d, ""));
+        ((d3) ((s0) s1Var.f2382d.get(16)).f2376k.get(2)).b(19, 3L);
+        ((s0) s1Var.f2382d.get(16)).f2376k.add(new d3("secondary_target_power_zone", 134, 1.0d, 0.0d, ""));
+        ((d3) ((s0) s1Var.f2382d.get(16)).f2376k.get(3)).b(19, 4L);
+        ((s0) s1Var.f2382d.get(16)).f2376k.add(new d3("secondary_target_stroke_type", 0, 1.0d, 0.0d, ""));
+        ((d3) ((s0) s1Var.f2382d.get(16)).f2376k.get(4)).b(19, 11L);
+        s1Var.h(new s0("secondary_custom_target_value_low", 21, 134, 1.0d, 0.0d, "", false, l2Var2));
+        ((s0) s1Var.f2382d.get(17)).f2376k.add(new d3("secondary_custom_target_speed_low", 134, 1000.0d, 0.0d, "m/s"));
+        ((d3) ((s0) s1Var.f2382d.get(17)).f2376k.get(0)).b(19, 0L);
+        ((s0) s1Var.f2382d.get(17)).f2376k.add(new d3("secondary_custom_target_heart_rate_low", 134, 1.0d, 0.0d, "% or bpm"));
+        ((d3) ((s0) s1Var.f2382d.get(17)).f2376k.get(1)).b(19, 1L);
+        ((s0) s1Var.f2382d.get(17)).f2376k.add(new d3("secondary_custom_target_cadence_low", 134, 1.0d, 0.0d, "rpm"));
+        ((d3) ((s0) s1Var.f2382d.get(17)).f2376k.get(2)).b(19, 3L);
+        ((s0) s1Var.f2382d.get(17)).f2376k.add(new d3("secondary_custom_target_power_low", 134, 1.0d, 0.0d, "% or watts"));
+        ((d3) ((s0) s1Var.f2382d.get(17)).f2376k.get(3)).b(19, 4L);
+        s1Var.h(new s0("secondary_custom_target_value_high", 22, 134, 1.0d, 0.0d, "", false, l2Var2));
+        ((s0) s1Var.f2382d.get(18)).f2376k.add(new d3("secondary_custom_target_speed_high", 134, 1000.0d, 0.0d, "m/s"));
+        ((d3) ((s0) s1Var.f2382d.get(18)).f2376k.get(0)).b(19, 0L);
+        ((s0) s1Var.f2382d.get(18)).f2376k.add(new d3("secondary_custom_target_heart_rate_high", 134, 1.0d, 0.0d, "% or bpm"));
+        ((d3) ((s0) s1Var.f2382d.get(18)).f2376k.get(1)).b(19, 1L);
+        ((s0) s1Var.f2382d.get(18)).f2376k.add(new d3("secondary_custom_target_cadence_high", 134, 1.0d, 0.0d, "rpm"));
+        ((d3) ((s0) s1Var.f2382d.get(18)).f2376k.get(2)).b(19, 3L);
+        ((s0) s1Var.f2382d.get(18)).f2376k.add(new d3("secondary_custom_target_power_high", 134, 1.0d, 0.0d, "% or watts"));
+        ((d3) ((s0) s1Var.f2382d.get(18)).f2376k.get(3)).b(19, 4L);
+    }
+
+    public x3(s1 s1Var) {
+        super(s1Var);
+    }
+}

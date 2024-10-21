@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="30900"
+    android:versionName="3.9.0"
+    android:compileSdkVersion="33"
+    android:compileSdkVersionCodename="13"
+    package="com.dsi.ant.plugins.antplus"
+    platformBuildVersionCode="33"
+    platformBuildVersionName="13">
+    <uses-sdk
+        android:minSdkVersion="29"
+        android:targetSdkVersion="33"/>
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false"/>
+    <queries>
+        <package android:name="com.dsi.ant.plugins.antplus"/>
+        <package android:name="com.dsi.ant.service.socket"/>
+        <intent>
+            <action android:name="com.dsi.ant.plugins.antplus.queryalreadyconnecteddevices"/>
+        </intent>
+    </queries>
+    <application
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:allowBackup="true"
+        android:extractNativeLibs="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <activity
+            android:label="ANT+ Plugin Manager"
+            android:name="com.dsi.ant.plugins.antplus.utility.db.Activity_PluginMgrDashboard"
+            android:exported="true"/>
+        <activity
+            android:name="com.dsi.ant.plugins.antplus.utility.db.Activity_OpenChannelsList"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.dsi.ant.intent.action.CHANNEL_PROVIDER_STATE_CHANGED"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dsi.ant.plugins.antplus.utility.db.Activity_DeviceScanDefaults"/>
+        <activity android:name="com.dsi.ant.plugins.antplus.utility.db.Activity_SavedDeviceList"/>
+        <activity
+            android:theme="@android:style/Theme.Dialog"
+            android:name="com.dsi.ant.plugins.antplus.utility.search.Dialog_SearchPreferredDevice"
+            android:exported="true"
+            android:noHistory="true"/>
+        <activity
+            android:name="com.dsi.ant.plugins.antplus.utility.search.Activity_SearchAllDevices"
+            android:exported="true"
+            android:noHistory="true"/>
+        <service
+            android:name="com.dsi.ant.plugins.antplus.environment.EnvironmentService"
+            android:exported="true"/>
+        <service
+            android:name="com.dsi.ant.plugins.antplus.geocache.GeocacheService"
+            android:exported="true"/>
+        <service
+            android:name="com.dsi.ant.plugins.antplus.heartrate.HeartRateService"
+            android:exported="true"/>
+        <service
+            android:name="com.dsi.ant.plugins.antplus.stridesdm.StrideSdmService"
+            android:exported="true"/>
+        <service
+            android:name="com.dsi.ant.plugins.antplus.weightscale.WeightScaleService"
+            android:exported="true"/>
+        <service
+            android:name="com.dsi.ant.plugins.antplus.controls.ControllableDeviceService"
+            android:exported="true"/>
+        <service
+            android:name="com.dsi.ant.plugins.antplus.controls.RemoteControlService"
+            android:exported="true"/>
+        <service
+            android:name="com.dsi.ant.plugins.antplus.controls.ControlsService"
+            android:exported="true"/>
+        <service
+            android:name="com.dsi.ant.plugins.antplus.bikespdcad.CombinedBikeSpdCadService"
+            android:exported="true"/>
+        <service
+            android:name="com.dsi.ant.plugins.antplus.fitnessequipment.FitnessEquipmentService"
+            android:exported="true"/>
+        <service
+            android:name="com.dsi.ant.plugins.antplus.bloodpressure.BloodPressureService"
+            android:exported="true"/>
+        <service
+            android:name="com.dsi.ant.plugins.antplus.utility.db.Service_DeviceDbProvider"
+            android:exported="true"/>
+        <service
+            android:name="com.dsi.ant.plugins.antplus.bikepower.BikePowerService"
+            android:exported="true"/>
+        <service
+            android:name="com.dsi.ant.plugins.antplus.watchcommunicator.WatchCommunicatorService"
+            android:exported="true"/>
+        <service
+            android:name="com.dsi.ant.plugins.antplus.multisearch.MultiSearchService"
+            android:exported="true"/>
+        <service
+            android:name="com.dsi.ant.plugins.googlefit.service.AntFitnessSensorProvider"
+            android:exported="true"
+            android:process=":antplusfitsensors">
+            <intent-filter>
+                <action android:name="com.google.android.gms.fitness.service.FitnessSensorService"/>
+                <data android:mimeType="vnd.google.fitness.data_type/com.google.heart_rate.bpm"/>
+                <data android:mimeType="vnd.google.fitness.data_type/com.google.step_count.delta"/>
+                <data android:mimeType="vnd.google.fitness.data_type/com.google.distance.delta"/>
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.google.gms.fitness.sdk.version"
+            android:value="21.1.0"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+    </application>
+</manifest>

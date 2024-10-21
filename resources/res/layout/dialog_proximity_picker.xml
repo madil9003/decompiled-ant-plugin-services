@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The proximity threshold setting limits the scan to only find devices within the given signal strength rating"/>
+    <CheckBox
+        android:gravity="center"
+        android:id="@+id/checkBox_Enable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linearLayout_ProximityControls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:gravity="center"
+            android:id="@+id/textView_ThresholdValueDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Threshold Rating: OFF"/>
+        <RelativeLayout
+            android:orientation="vertical"
+            android:id="@+id/relativeLayout_ProxValueControls"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <SeekBar
+                android:id="@+id/seekBar_ThresholdValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="9"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 (Near)"
+                android:layout_below="@+id/seekBar_ThresholdValue"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 (Far)"
+                android:layout_below="@+id/seekBar_ThresholdValue"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
